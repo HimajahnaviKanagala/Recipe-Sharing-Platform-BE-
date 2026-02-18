@@ -64,3 +64,87 @@ jsonwebtoken (JWT), bcryptjs (Password hashing), cors, dotenv
 # Development Tools
 
 Nodemon
+
+# 📡 API Documentation
+
+# Base URLs
+
+# Development
+
+http://localhost:5000/api
+
+# Production
+
+https://recipe-sharing-platform-be-2-obn9.onrender.com
+
+# 🔐 Authentication Endpoints
+
+# Register User
+
+POST /auth/register
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "securePassword123"
+}
+
+# Login User
+
+POST /auth/login
+{
+  "email": "john@example.com",
+  "password": "securePassword123"
+}
+Response:
+{
+  "token": "JWT_TOKEN",
+  "user": {
+    "id": "uuid",
+    "role": "USER"
+  }
+}
+
+# 🍲 Recipe Endpoints
+
+# Create Recipe (Authenticated)
+
+POST /recipes
+
+# Get All Recipes
+
+GET /recipes
+
+# Get Recipe By ID
+
+GET /recipes/:id
+
+# Update Recipe (Owner or Admin)
+
+PUT /recipes/:id
+
+# Delete Recipe (Owner or Admin)
+
+DELETE /recipes/:id
+
+# 👨‍💼 Admin Endpoints (RBAC Protected)
+
+Access Level: MODERATOR or ADMIN
+
+# Get All Users
+
+GET /admin/users
+
+# Update User Role
+
+PUT /admin/users/:id/role
+
+# Delete Any Recipe
+
+DELETE /admin/recipes/:id
+
+# Get Platform Statistics
+
+GET /admin/stats
+
+
+
