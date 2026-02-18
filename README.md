@@ -16,3 +16,51 @@ The Recipe Sharing Platform backend enables users to:
 ➡️ Access admin moderation and user management tools (based on role)
 
 The system is designed with scalability, security, and clean architecture principles in mind.
+
+# 🏗️ Architecture & Design
+
+The backend follows a modular layered architecture:
+
+➡️ Routes Layer – Defines API endpoints
+
+➡️ Controllers Layer – Handles request/response logic
+
+➡️ Middleware Layer – Authentication & RBAC authorization
+
+➡️ Services Layer – AI and external integrations
+
+➡️ Database Layer – PostgreSQL via Supabase
+
+➡️ Configuration Layer – Environment management
+
+# Key Design Principles
+
+➡️ Separation of concerns
+
+➡️ Stateless JWT authentication
+
+➡️ Role-based authorization
+
+➡️ Environment-based configuration
+
+# 🛠️ Tech Stack
+
+# Runtime & Framework
+
+Node.js, Express.js
+
+# Database
+
+Supabase (PostgreSQL), @supabase/supabase-js
+
+# Authentication & Security
+
+jsonwebtoken (JWT), bcryptjs (Password hashing), cors, dotenv
+
+# AI Integration
+
+ mock AI responses 
+
+# Development Tools
+
+Nodemon
