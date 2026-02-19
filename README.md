@@ -45,41 +45,41 @@ The backend follows a modular layered architecture:
 
 # 🛠️ Tech Stack
 
-# Runtime & Framework
+ Runtime & Framework
 
 Node.js, Express.js
 
-# Database
+ Database
 
 Supabase (PostgreSQL), @supabase/supabase-js
 
-# Authentication & Security
+ Authentication & Security
 
 jsonwebtoken (JWT), bcryptjs (Password hashing), cors, dotenv
 
-# AI Integration
+ AI Integration
 
  mock AI responses 
 
-# Development Tools
+ Development Tools
 
 Nodemon
 
 # 📡 API Documentation
 
-# Base URLs
+ Base URLs
 
-# Development
+ Development
 
 http://localhost:5000/api
 
-# Production
+ Production
 
 https://recipe-sharing-platform-be-2-obn9.onrender.com/api/recipes
 
 # 🔐 Authentication Endpoints
 
-# Register User
+ Register User
 
 POST /auth/register
 {
@@ -88,7 +88,7 @@ POST /auth/register
   "password": "securePassword123"
 }
 
-# Login User
+ Login User
 
 POST /auth/login
 {
