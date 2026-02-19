@@ -45,41 +45,41 @@ The backend follows a modular layered architecture:
 
 # 🛠️ Tech Stack
 
- Runtime & Framework
+### Runtime & Framework
 
 Node.js, Express.js
 
- Database
+### Database
 
 Supabase (PostgreSQL), @supabase/supabase-js
 
- Authentication & Security
+### Authentication & Security
 
 jsonwebtoken (JWT), bcryptjs (Password hashing), cors, dotenv
 
- AI Integration
+### AI Integration
 
  mock AI responses 
 
- Development Tools
+### Development Tools
 
 Nodemon
 
 # 📡 API Documentation
 
- Base URLs
+## Base URLs
 
- Development
+### Development
 
 http://localhost:5000/api
 
- Production
+### Production
 
 https://recipe-sharing-platform-be-2-obn9.onrender.com/api/recipes
 
 # 🔐 Authentication Endpoints
 
- Register User
+### Register User
 
 POST /auth/register
 {
@@ -88,7 +88,7 @@ POST /auth/register
   "password": "securePassword123"
 }
 
- Login User
+### Login User
 
 POST /auth/login
 {
@@ -110,19 +110,19 @@ Response:
 
 POST /recipes
 
-# Get All Recipes
+### Get All Recipes
 
 GET /recipes
 
-# Get Recipe By ID
+### Get Recipe By ID
 
 GET /recipes/:id
 
-# Update Recipe (Owner or Admin)
+### Update Recipe (Owner or Admin)
 
 PUT /recipes/:id
 
-# Delete Recipe (Owner or Admin)
+### Delete Recipe (Owner or Admin)
 
 DELETE /recipes/:id
 
@@ -130,25 +130,25 @@ DELETE /recipes/:id
 
 Access Level: MODERATOR or ADMIN
 
-# Get All Users
+### Get All Users
 
 GET /admin/users
 
-# Update User Role
+### Update User Role
 
 PUT /admin/users/:id/role
 
-# Delete Any Recipe
+### Delete Any Recipe
 
 DELETE /admin/recipes/:id
 
-# Get Platform Statistics
+### Get Platform Statistics
 
 GET /admin/stats
 
 # 🤖 AI Cooking Assistant
 
-# Generate Recipe Suggestions
+### Generate Recipe Suggestions
 
 POST /ai/suggest
 
@@ -163,7 +163,7 @@ Response:
 
 # 🗄️ Database Schema
 
-# Users Table
+### Users Table
 
 | Column     | Type          | Description              |
 | ---------- | ------------- | ------------------------ |
@@ -174,7 +174,7 @@ Response:
 | role       | ENUM          | USER / MODERATOR / ADMIN |
 | created_at | TIMESTAMP     | Account creation date    |
 
-# Recipes Table
+### Recipes Table
 
 | Column       | Type      | Description          |
 | ------------ | --------- | -------------------- |
@@ -191,7 +191,7 @@ Response:
 
 # 🔐 Security Model
 
-# Authentication
+### Authentication
 
 ➡️ Stateless JWT-based authentication
 
@@ -199,7 +199,7 @@ Response:
 
 ➡️ Token validation on each secured request
 
-# Authorization (RBAC)
+### Authorization (RBAC)
 
 Roles:
 
@@ -211,7 +211,7 @@ Roles:
 
 Access rules enforced via middleware.
 
-# Database-Level Security
+### Database-Level Security
 
 ➡️ Users can modify only their own recipes
 
@@ -219,17 +219,17 @@ Access rules enforced via middleware.
 
 # ⚙️ Installation & Setup
 
-# 1. Clone Repository
+### 1. Clone Repository
  
  git clone https://github.com/HimajahnaviKanagala/Recipe-Sharing-Platform-BE-
 
  cd Recipe-Sharing-Platform-BE-
 
- # 2. Install Dependencies
+ ### 2. Install Dependencies
  
   npm install
  
- # 3. Create Environment Variables
+### 3. Create Environment Variables
 
  PORT=5000
 
@@ -239,11 +239,11 @@ SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
 
 JWT_SECRET=your_jwt_secret
 
-# 4. Run Development Server
+### 4. Run Development Server
 
 npm run dev
 
-# 5. Run Production Server
+### 5. Run Production Server
 
 npm start
 
