@@ -106,7 +106,7 @@ Response:
 
 # 🍲 Recipe Endpoints
 
-# Create Recipe (Authenticated)
+### Create Recipe (Authenticated)
 
 POST /recipes
 
