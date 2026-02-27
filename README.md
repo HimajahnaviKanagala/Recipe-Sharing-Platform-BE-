@@ -75,7 +75,7 @@ http://localhost:5000/api
 
 ### Production
 
-https://recipe-sharing-platform-be-6.onrender.com
+https://recipe-sharing-platform-be-6.onrender.com/api/recipes
 
 # 🔐 Authentication Endpoints
 
@@ -249,7 +249,7 @@ npm start
 
 # 🚀 Deployment
 
-Backend deployed at:https://recipe-sharing-platform-be-2-obn9.onrender.com/api/recipes
+Backend deployed at:https://recipe-sharing-platform-be-6.onrender.com/api/recipes
 
 Recommended platforms:
 
