@@ -75,7 +75,7 @@ http://localhost:5000/api
 
 ### Production
 
-https://recipe-sharing-platform-be-6.onrender.com
+https://recipe-sharing-platform-be-6.onrender.com/api/recipes
 
 # 🔐 Authentication Endpoints
 
